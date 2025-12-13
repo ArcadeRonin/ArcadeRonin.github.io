@@ -1,8 +1,9 @@
 ---
 layout: page
+title: Home
+permalink: /
 ---
-
-# Ron Payne Jr
+## Ron Payne Jr
 
 **Retro Ron — your friendly neighborhood I.T. guy**
 
