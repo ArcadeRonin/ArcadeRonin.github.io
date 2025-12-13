@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Home
 ---
 
 # Ron Payne Jr
