@@ -1,5 +1,5 @@
 ---
-title: "When Windows 11 Default Apps Break: A Practical Alternative to Photos"
+title: "When Windows 11 Photos Stops Working: A Practical Alternative"
 categories: [it, desktop-support]
 ---
 
