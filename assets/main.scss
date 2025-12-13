@@ -1,0 +1,45 @@
+---
+---
+
+@import "minima";
+
+/* ===== Retro Accent Palette ===== */
+:root {
+  --retro-accent: #d18b00;   /* warm amber */
+  --retro-muted: #5f6f7a;    /* soft blue-gray */
+}
+
+/* Headings: slightly tighter, classic feel */
+h1, h2, h3 {
+  letter-spacing: 0.02em;
+}
+
+/* Links: subtle retro underline on hover */
+a {
+  text-decoration-color: var(--retro-accent);
+}
+
+a:hover {
+  color: var(--retro-accent);
+  text-decoration-thickness: 2px;
+}
+
+/* Blockquotes: terminal-note vibe */
+blockquote {
+  border-left: 4px solid var(--retro-accent);
+  background: #faf8f4;
+  padding-left: 1rem;
+  color: var(--retro-muted);
+}
+
+/* Code blocks: soft CRT-paper look */
+pre, code {
+  background: #f6f4f1;
+  border-radius: 4px;
+}
+
+/* Footer: quieter, less shouty */
+.site-footer {
+  font-size: 0.9em;
+  color: var(--retro-muted);
+}
