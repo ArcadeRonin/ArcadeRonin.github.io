@@ -136,3 +136,35 @@ span.handwritten-felt {
   color: #111 !important;
   text-shadow: 0.9px 0.9px 0 #111, -0.9px 0.6px 0 #111 !important;
 }
+
+/* ===== Zine Highlight / Underline Accents ===== */
+
+/* Highlighter swipe behind text */
+.zine-highlight {
+  display: inline;
+  padding: 0.05em 0.15em;
+  background: linear-gradient(
+    transparent 55%,
+    rgba(255, 235, 59, 0.55) 55%
+  );
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Rough marker underline */
+.zine-underline {
+  display: inline-block;
+  padding-bottom: 0.08em;
+  background-image: linear-gradient(
+    rgba(255, 193, 7, 0.9),
+    rgba(255, 193, 7, 0.9)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.18em;
+  background-position: 0 95%;
+}
+
+/* Make the underline feel less "perfect" on hover (optional) */
+.zine-underline:hover {
+  background-size: 100% 0.22em;
+}
