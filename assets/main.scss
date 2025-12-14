@@ -337,4 +337,7 @@ span.handwritten-felt {
   transform: translate(-50%, -50%) rotate(-0.4deg);
   width: 35%;
   height: 3px;
-  background: rgba(197, 137, 46, 0.95); /* zine in*
+  background: var(--zine-ink);
+  border-radius: 2px;
+}
+
