@@ -11,11 +11,9 @@ categories: [it, desktop-support]
 
 <div class="zine-divider staple"></div>
 
-
 ### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
 
 <div class="zine-divider ornament"></div>
-
 
 ### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
 
