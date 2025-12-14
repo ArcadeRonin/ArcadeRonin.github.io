@@ -155,12 +155,13 @@ span.handwritten-felt {
   background: rgba(255, 193, 7, 0.9);
   z-index: -1;
   border-radius: 2px;
+
+  /* imperfection */
+  transform-origin: left center;
+  transform: rotate(-1.2deg);
+  opacity: 0.95;
 }
 
-.zine-underline::after {
-  transform: rotate(-0.6deg);
-  filter: saturate(1.05);
-}
 
 
 /* Highlighter swipe behind text */
