@@ -137,34 +137,40 @@ span.handwritten-felt {
   text-shadow: 0.9px 0.9px 0 #111, -0.9px 0.6px 0 #111 !important;
 }
 
-/* ===== Zine Highlight / Underline Accents ===== */
+/* ===== Zine Highlight / Underline Accents (robust) ===== */
+
+/* Marker underline using pseudo-element */
+.zine-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.zine-underline::after {
+  content: "";
+  position: absolute;
+  left: -2%;
+  bottom: 0.1em;
+  width: 104%;
+  height: 0.22em;
+  background: rgba(255, 193, 7, 0.9);
+  z-index: -1;
+  border-radius: 2px;
+}
 
 /* Highlighter swipe behind text */
 .zine-highlight {
-  display: inline;
-  padding: 0.05em 0.15em;
-  background: linear-gradient(
-    transparent 55%,
-    rgba(255, 235, 59, 0.55) 55%
-  );
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-/* Rough marker underline */
-.zine-underline {
+  position: relative;
   display: inline-block;
-  padding-bottom: 0.08em;
-  background-image: linear-gradient(
-    rgba(255, 193, 7, 0.9),
-    rgba(255, 193, 7, 0.9)
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 0.18em;
-  background-position: 0 95%;
 }
 
-/* Make the underline feel less "perfect" on hover (optional) */
-.zine-underline:hover {
-  background-size: 100% 0.22em;
+.zine-highlight::before {
+  content: "";
+  position: absolute;
+  left: -3%;
+  top: 55%;
+  width: 106%;
+  height: 0.9em;
+  background: rgba(255, 235, 59, 0.6);
+  z-index: -1;
+  border-radius: 3px;
 }
