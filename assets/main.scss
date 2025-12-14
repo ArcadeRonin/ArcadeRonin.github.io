@@ -244,3 +244,56 @@ span.handwritten-felt {
   transform: rotate(-0.3deg);
 }
 
+/* ===== Zine Section Dividers ===== */
+
+.zine-divider {
+  margin: 2.5rem 0;
+  height: 1px;
+  position: relative;
+}
+
+/* A) Photocopier cut line (dashed) */
+.zine-divider.dash {
+  border-top: 2px dashed rgba(30, 30, 30, 0.55);
+}
+
+/* B) Stapled rule (double line + “staples”) */
+.zine-divider.staple {
+  border-top: 2px solid rgba(30, 30, 30, 0.55);
+  border-bottom: 1px solid rgba(30, 30, 30, 0.35);
+  height: 6px;
+}
+
+.zine-divider.staple::before,
+.zine-divider.staple::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 18px;
+  height: 12px;
+  border: 2px solid rgba(30, 30, 30, 0.45);
+  border-left: none;
+  border-right: none;
+  border-radius: 2px;
+}
+
+.zine-divider.staple::before { left: 10%; }
+.zine-divider.staple::after  { right: 10%; }
+
+/* C) Ornamental “issue break” */
+.zine-divider.ornament {
+  border: none;
+  height: auto;
+  text-align: center;
+}
+
+.zine-divider.ornament::before {
+  content: "✦ ✦ ✦";
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border: 2px solid rgba(197, 137, 46, 0.45); /* matches your zine ink tone */
+  border-radius: 999px;
+  color: rgba(30, 30, 30, 0.75);
+  background: rgba(255, 228, 122, 0.18);     /* matches your highlight tone */
+  letter-spacing: 0.25em;
+}
