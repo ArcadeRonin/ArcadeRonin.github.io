@@ -297,3 +297,44 @@ span.handwritten-felt {
   background: rgba(255, 228, 122, 0.18);     /* matches your highlight tone */
   letter-spacing: 0.25em;
 }
+
+/* ===== Zine Triple-Line Divider ===== */
+
+.zine-divider.triple {
+  position: relative;
+  height: 1.8rem;
+  margin: 3rem 0;
+}
+
+.zine-divider.triple::before,
+.zine-divider.triple::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 30, 30, 0.75);
+}
+
+/* Top line – longest, thinnest */
+.zine-divider.triple::before {
+  top: 0;
+  width: 85%;
+  height: 1px;
+}
+
+/* Bottom line – medium length */
+.zine-divider.triple::after {
+  bottom: 0;
+  width: 55%;
+  height: 1px;
+}
+
+/* Middle line – shortest, thicker */
+.zine-divider.triple span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-0.4deg);
+  width: 35%;
+  height: 3px;
+  background: rgba(197, 137, 46, 0.95); /* zine in*
