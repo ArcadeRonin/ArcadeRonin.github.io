@@ -117,3 +117,15 @@ pre, code {
   color: #111;
   text-shadow: 0.75px 0.75px 0 #111, -0.75px 0.5px 0 #111;
 }
+
+h1 .handwritten,
+h2 .handwritten,
+h3 .handwritten,
+h1 .handwritten-pencil,
+h2 .handwritten-pencil,
+h3 .handwritten-pencil,
+h1 .handwritten-felt,
+h2 .handwritten-felt,
+h3 .handwritten-felt {
+  text-transform: none !important;
+}
