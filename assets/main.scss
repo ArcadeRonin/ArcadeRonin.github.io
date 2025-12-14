@@ -342,9 +342,26 @@ span.handwritten-felt {
   width: 36%;
   height: 3px;
 
-  /* pencil vibe */
-  background: rgba(35, 35, 35, 0.35);
+  /* pencil texture */
+  background:
+    repeating-linear-gradient(
+      -10deg,
+      rgba(25, 25, 25, 0.18) 0px,
+      rgba(25, 25, 25, 0.18) 2px,
+      rgba(25, 25, 25, 0.10) 3px,
+      rgba(25, 25, 25, 0.10) 6px
+    );
+
   border-radius: 3px;
+
+  /* imperfect placement + wobble */
+  transform: translate(-50%, -50%) rotate(-0.6deg);
+
+  /* graphite softness */
+  filter: blur(0.25px);
+  opacity: 0.9;
+}
+
 
   /* imperfect placement + wobble */
   transform: translate(-50%, -50%) rotate(-0.6deg);
