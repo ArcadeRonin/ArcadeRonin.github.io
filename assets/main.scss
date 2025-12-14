@@ -90,13 +90,13 @@ pre, code {
   color: var(--retro-muted);
 }
 
-/* ===== Handwritten Headings (subtle) ===== */
+/* ===== Handwritten Headings ===== */
 .handwritten {
   font-family: "Segoe Script", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
-  text-transform: none;         /* undo all-caps if you used it */
+  text-transform: none;
   letter-spacing: 0.01em;
-
-  /* ===== Handwritten Variants ===== */
+  font-weight: 600;
+}
 
 /* Pencil: slightly rough, graphite-like */
 .handwritten-pencil {
@@ -104,12 +104,8 @@ pre, code {
   text-transform: none;
   letter-spacing: 0.01em;
   font-weight: 600;
-
-  /* subtle graphite texture */
   color: #222;
-  text-shadow:
-    0.3px 0.3px 0 #555,
-    -0.3px 0.2px 0 #555;
+  text-shadow: 0.35px 0.35px 0 #555, -0.35px 0.25px 0 #555;
 }
 
 /* Felt-tip: darker, bolder, a touch “inked” */
@@ -118,13 +114,6 @@ pre, code {
   text-transform: none;
   letter-spacing: 0.015em;
   font-weight: 800;
-
   color: #111;
-  text-shadow:
-    0.6px 0.6px 0 #111,
-    -0.6px 0.4px 0 #111;
+  text-shadow: 0.75px 0.75px 0 #111, -0.75px 0.5px 0 #111;
 }
-
-  font-weight: 600;
-}
-
