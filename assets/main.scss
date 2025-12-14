@@ -89,3 +89,12 @@ pre, code {
   font-size: 0.9em;
   color: var(--retro-muted);
 }
+
+/* ===== Handwritten Headings (subtle) ===== */
+.handwritten {
+  font-family: "Segoe Script", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
+  text-transform: none;         /* undo all-caps if you used it */
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
