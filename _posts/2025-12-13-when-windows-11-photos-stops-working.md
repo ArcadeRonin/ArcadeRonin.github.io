@@ -17,9 +17,8 @@ categories: [it, desktop-support]
 
 ### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
 
-<div class="zine-divider triple">
-  <span></span>
-</div>
+<div class="zine-divider triple"><span></span></div>
+
 
 
 
