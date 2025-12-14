@@ -3,6 +3,52 @@
 
 @import "minima";
 
+/* ===== Zine Typography ===== */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f8f4ec; /* off-white paper */
+  color: #1e1e1e;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ===== Zine Column Width ===== */
+.wrapper {
+  max-width: 42rem;
+}
+
+/* ===== Section Dividers ===== */
+hr {
+  border: none;
+  border-top: 2px solid #1e1e1e;
+  margin: 3rem 0;
+}
+
+/* ===== Zine Callouts ===== */
+blockquote {
+  border-left: 5px solid #1e1e1e;
+  padding-left: 1rem;
+  font-style: italic;
+  background: #f2ede3;
+}
+
+/* ===== Zine Links ===== */
+a {
+  color: #1e1e1e;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+a:hover {
+  background-color: #fff2cc;
+}
+
+
+
 /* ===== Retro Accent Palette ===== */
 :root {
   --retro-accent: #d18b00;   /* warm amber */
