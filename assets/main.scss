@@ -95,6 +95,36 @@ pre, code {
   font-family: "Segoe Script", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
   text-transform: none;         /* undo all-caps if you used it */
   letter-spacing: 0.01em;
+
+  /* ===== Handwritten Variants ===== */
+
+/* Pencil: slightly rough, graphite-like */
+.handwritten-pencil {
+  font-family: "Segoe Print", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+
+  /* subtle graphite texture */
+  color: #222;
+  text-shadow:
+    0.3px 0.3px 0 #555,
+    -0.3px 0.2px 0 #555;
+}
+
+/* Felt-tip: darker, bolder, a touch “inked” */
+.handwritten-felt {
+  font-family: "Marker Felt", "Segoe Script", "Segoe Print", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", cursive;
+  text-transform: none;
+  letter-spacing: 0.015em;
+  font-weight: 800;
+
+  color: #111;
+  text-shadow:
+    0.6px 0.6px 0 #111,
+    -0.6px 0.4px 0 #111;
+}
+
   font-weight: 600;
 }
 
