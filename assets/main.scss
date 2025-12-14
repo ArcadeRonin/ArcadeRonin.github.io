@@ -298,46 +298,63 @@ span.handwritten-felt {
   letter-spacing: 0.25em;
 }
 
-/* ===== Zine Triple-Line Divider ===== */
+/* ===== Zine Triple-Line Divider (imperfect + pencil center) ===== */
 
 .zine-divider.triple {
   position: relative;
-  height: 1.8rem;
+  height: 2.0rem;
   margin: 3rem 0;
 }
 
+/* shared line base */
 .zine-divider.triple::before,
 .zine-divider.triple::after {
   content: "";
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  background: rgba(30, 30, 30, 0.75);
+  background: rgba(30, 30, 30, 0.65); /* soft “print ink” */
+  border-radius: 2px;
 }
 
-/* Top line – longest, thinnest */
+/* Top line – longest, slightly tilted */
 .zine-divider.triple::before {
-  top: 0;
-  width: 85%;
+  top: 0.15rem;
+  width: 86%;
   height: 1px;
+  transform: translateX(-50%) rotate(0.35deg);
+  opacity: 0.75;
 }
 
-/* Bottom line – medium length */
+/* Bottom line – medium, opposite tilt */
 .zine-divider.triple::after {
-  bottom: 0;
-  width: 55%;
+  bottom: 0.15rem;
+  width: 58%;
   height: 1px;
+  transform: translateX(-50%) rotate(-0.25deg);
+  opacity: 0.7;
 }
 
-/* Middle line – shortest, thicker */
+/* Middle line – pencil (grainy, lighter, imperfect) */
 .zine-divider.triple span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-0.4deg);
-  width: 35%;
+  width: 36%;
   height: 3px;
-  background: var(--zine-ink);
-  border-radius: 2px;
+
+  /* pencil vibe */
+  background: rgba(35, 35, 35, 0.35);
+  border-radius: 3px;
+
+  /* imperfect placement + wobble */
+  transform: translate(-50%, -50%) rotate(-0.6deg);
+
+  /* “graphite grain” */
+  box-shadow:
+    0.6px 0.6px 0 rgba(0, 0, 0, 0.08),
+    -0.4px 0.3px 0 rgba(0, 0, 0, 0.06);
+  filter: blur(0.15px);
+  opacity: 0.9;
 }
+
 
