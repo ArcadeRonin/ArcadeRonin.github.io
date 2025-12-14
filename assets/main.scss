@@ -227,3 +227,20 @@ span.handwritten-felt {
 .zine-highlight::before {
   background: var(--zine-highlight);
 }
+
+.zine-underline::after {
+  height: 0.28em;        /* slightly thicker */
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+.zine-underline::after {
+  left: -1%;
+  width: 102%;
+}
+
+.zine-highlight::before {
+  height: 1.05em;
+  transform: rotate(-0.3deg);
+}
+
