@@ -118,14 +118,21 @@ pre, code {
   text-shadow: 0.75px 0.75px 0 #111, -0.75px 0.5px 0 #111;
 }
 
-h1 .handwritten,
-h2 .handwritten,
-h3 .handwritten,
-h1 .handwritten-pencil,
-h2 .handwritten-pencil,
-h3 .handwritten-pencil,
-h1 .handwritten-felt,
-h2 .handwritten-felt,
-h3 .handwritten-felt {
+/* Now explicitly apply our fonts + effects with high priority */
+span.handwritten-pencil {
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
   text-transform: none !important;
+  color: #222 !important;
+  text-shadow: 0.35px 0.35px 0 #555, -0.35px 0.25px 0 #555 !important;
+}
+
+span.handwritten-felt {
+  font-family: "Segoe Script", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  color: #111 !important;
+  text-shadow: 0.9px 0.9px 0 #111, -0.9px 0.6px 0 #111 !important;
 }
