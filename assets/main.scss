@@ -157,6 +157,12 @@ span.handwritten-felt {
   border-radius: 2px;
 }
 
+.zine-underline::after {
+  transform: rotate(-0.6deg);
+  filter: saturate(1.05);
+}
+
+
 /* Highlighter swipe behind text */
 .zine-highlight {
   position: relative;
