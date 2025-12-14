@@ -11,6 +11,9 @@ categories: [it, desktop-support]
 
 ### <span class="handwritten-felt zine-highlight zine-underline">The Problem</span>
 
+### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
+
+
 
 Windows 11’s built-in apps are convenient until they aren’t. An app that has recently begun to cause us trouble at work is Photos. In some cases, Photos can become corrupted or partially broken, and frustratingly, the usual fixes don’t always work. Repairing the app, resetting it, uninstalling, or even reinstalling it from the Microsoft Store may fail to resolve the issue.
 
