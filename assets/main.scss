@@ -289,6 +289,53 @@ span.handwritten-felt {
     );
 }
 
+/* ===== DCC-Style Divider ===== */
+
+.zine-divider.dcc {
+  position: relative;
+  height: 2.5rem;
+  margin: 3.5rem 0;
+  text-align: center;
+}
+
+/* main rule */
+.zine-divider.dcc::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 2px;
+  background: rgba(30, 30, 30, 0.85);
+  transform: translate(-50%, -50%) rotate(-0.4deg);
+}
+
+/* central glyph / mark */
+.zine-divider.dcc span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 0.75rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.25em;
+  color: rgba(30, 30, 30, 0.9);
+  background: #f8f4ec; /* paper color */
+  transform: rotate(0.6deg);
+}
+
+/* optional “rough ink” feel */
+.zine-divider.dcc::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 78%;
+  height: 1px;
+  background: rgba(30, 30, 30, 0.35);
+  transform: translate(-50%, -50%) rotate(0.6deg);
+}
+
+
 /* =========================================================
    NOTES / CALLOUTS
    ========================================================= */
