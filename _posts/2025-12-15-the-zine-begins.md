@@ -84,12 +84,12 @@ categories: [zine, retro-games, DCC]
 
     <div class="colophon-item">
       <div class="colophon-label">Listening / Playing</div>
-      <div class="colophon-value">Optional: what you were into this week</div>
+      <div class="colophon-value">Spotify/You Tube End of year recaps. Intellivision Sprint</div>
     </div>
 
     <div class="colophon-item">
       <div class="colophon-label">Local Conditions</div>
-      <div class="colophon-value">Optional: “Coffee, rain, and a CRT glow.”</div>
+      <div class="colophon-value">“Snow, Freezing Rain, Iced Tea, and a CRT glow.”</div>
     </div>
   </div>
 
