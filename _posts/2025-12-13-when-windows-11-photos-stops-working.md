@@ -28,9 +28,11 @@ When this happens, our designers and customer service reps are left without a re
 
 
 ### Why This Is a Bigger Issue Than It Looks
-<div class="zine-margin">
+
+<div class="zine-note margin">
   <div class="zine-hand">Quick note: this only shows up on some machines.</div>
 </div>
+
 
 
 For many businesses, image viewing isn’t optional. Our company frequently receives photos from customers, and a large portion of those images are in **HEIC** format. HEIC (High Efficiency Image Container) is the standard photo format used by iPhones, so this isn’t an edge case for us. It’s everyday business as usual.
@@ -58,9 +60,10 @@ When you factor in:
 
 This is where **nomacs** comes in.
 
-<div class="zine-scribble">
-  <span class="zine-hand">Try this first:</span> install nomacs, set default apps, move on.
+<div class="zine-note margin-left">
+  <div class="zine-hand">Checklist: Install → set default → done</div>
 </div>
+
 
 
 nomacs is a free, open-source image viewer for Windows 11 that:
