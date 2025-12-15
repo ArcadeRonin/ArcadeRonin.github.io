@@ -84,7 +84,7 @@ categories: [zine, retro-games, DCC]
 
     <div class="colophon-item">
       <div class="colophon-label">Listening / Playing</div>
-      <div class="colophon-value">Spotify/You Tube End of year recaps. Intellivision Sprint</div>
+      <div class="colophon-value">Spotify end of year recaps. Intellivision Sprint</div>
     </div>
 
     <div class="colophon-item">
