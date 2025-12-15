@@ -7,8 +7,8 @@ permalink: /
 
 **Retro Ron — your friendly neighborhood I.T. guy**
 
-I write about **retro games**, **retro tech**, and **I.T. Desktop Support** — plus projects I’m tinkering with along the way.
+I write about **retro games**, **retro tech**, **Dungeon Crawl Classic** and **I.T. Desktop Support** — plus projects I’m tinkering with along the way.
 
-- Read the latest posts on the **[Blog](/blog/)**
+- Read the latest posts on the **[Zine](/Zine/)**
 - Browse what I’m building on **[Projects](/projects/)**
 - Learn more **[About me](/about/)**
