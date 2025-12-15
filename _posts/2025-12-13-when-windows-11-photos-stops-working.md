@@ -33,6 +33,14 @@ For many businesses, image viewing isn’t optional. Our company frequently rece
 
 On Windows, viewing HEIC files typically requires installing the HEVC/HEIC codec from the Microsoft Store. Microsoft charges a small fee for this because the underlying HEVC compression technology is covered by patent licensing. Individually, the cost is minor. At scale, the cost still doesn’t break the bank, but there is more to consider.
 
+<div class="zine-note">
+  <div class="zine-hand">
+    Note: This kept happening on multiple machines even after reset/reinstall.
+    That’s when we stopped fighting Photos and replaced it.
+  </div>
+</div>
+
+
 When you factor in:
 
 - 60+ store locations  
