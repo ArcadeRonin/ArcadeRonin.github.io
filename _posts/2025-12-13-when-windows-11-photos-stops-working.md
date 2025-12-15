@@ -57,6 +57,7 @@ When you factor in:
 ### A Free, Open-Source Solution: nomacs
 
 This is where **nomacs** comes in.
+
 <div class="zine-scribble">
   <span class="zine-hand">Try this first:</span> install nomacs, set default apps, move on.
 </div>
@@ -104,6 +105,7 @@ In other words, fixing the Photos problem with a reliable alternative also solve
 Windows 11 default apps aren’t always as reliable as they should be, and when Photos breaks, it can be surprisingly hard to fix. For organizations that regularly handle iPhone photos, relying on paid codecs across dozens of locations is inefficient and, depending on scale, can be costly.
 
 **nomacs** is a practical, free, and scalable solution. Sometimes, the simplest fix is replacing the broken piece entirely.
+
 <div class="zine-pull">
   “Sometimes the simplest fix is replacing the broken piece entirely.”
 </div>
