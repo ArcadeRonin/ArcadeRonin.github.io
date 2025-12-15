@@ -41,3 +41,60 @@ categories: [zine, retro-games, DCC]
     — Retro Ron
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="colophon dcc">
+  <div class="colophon-title">Colophon</div>
+
+  <div class="colophon-grid">
+    <div class="colophon-item">
+      <div class="colophon-label">Imprint</div>
+      <div class="colophon-value">Retro Ronin Press</div>
+    </div>
+
+    <div class="colophon-item">
+      <div class="colophon-label">Issue</div>
+      <div class="colophon-value">Issue 001</div>
+    </div>
+
+    <div class="colophon-item">
+      <div class="colophon-label">Filed Under</div>
+      <div class="colophon-value">Zine · Retro Games · DCC</div>
+    </div>
+
+    <div class="colophon-item">
+      <div class="colophon-label">Created With</div>
+      <div class="colophon-value">GitHub Pages · Jekyll · Markdown</div>
+    </div>
+
+    <div class="colophon-item">
+      <div class="colophon-label">Listening / Playing</div>
+      <div class="colophon-value">Optional: what you were into this week</div>
+    </div>
+
+    <div class="colophon-item">
+      <div class="colophon-label">Local Conditions</div>
+      <div class="colophon-value">Optional: “Coffee, rain, and a CRT glow.”</div>
+    </div>
+  </div>
+
+  <div class="colophon-stamp">
+    <div>© <span class="colophon-value">2025</span> Retro Ronin Press</div>
+    <div class="sig">— Retro Ron</div>
+  </div>
+</div>
