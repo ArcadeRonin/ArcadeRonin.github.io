@@ -4,7 +4,7 @@ categories: [zine, retro-games, DCC]
 ---
 
 <div class="module-card dcc">
-  <div class="module-glyph">⚔☠</div>
+  <div class="module-glyph">✦</div>
 
   <div class="module-kicker">
     <div>
