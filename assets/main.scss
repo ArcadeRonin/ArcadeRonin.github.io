@@ -3,191 +3,149 @@
 
 @import "minima";
 
-/* ===== Zine Typography ===== */
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  background-color: #f8f4ec; /* off-white paper */
-  color: #1e1e1e;
+/* =========================================================
+   ZINE BASE: paper + typography
+   ========================================================= */
+
+:root {
+  --paper: #f8f4ec;
+  --ink: rgba(30, 30, 30, 0.92);
+
+  /* zine accent tones (tuned for your paper background) */
+  --zine-ink: rgba(197, 137, 46, 0.95);
+  --zine-highlight: rgba(255, 228, 122, 0.55);
+
+  --retro-muted: #5f6f7a;
 }
 
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+/* Headings: typewriter-ish zine look */
 h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
-/* ===== Zine Column Width ===== */
+/* Keep reading column readable, but leave room for margin notes */
 .wrapper {
+  max-width: 58rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.post-content,
+.page-content {
   max-width: 42rem;
+  margin-right: auto; /* creates right gutter space */
+  position: relative;
 }
 
-/* ===== Section Dividers ===== */
-hr {
-  border: none;
-  border-top: 2px solid #1e1e1e;
-  margin: 3rem 0;
-}
-
-/* ===== Zine Callouts ===== */
-blockquote {
-  border-left: 5px solid #1e1e1e;
-  padding-left: 1rem;
-  font-style: italic;
-  background: #f2ede3;
-}
-
-/* ===== Zine Links ===== */
+/* Links */
 a {
-  color: #1e1e1e;
+  color: var(--ink);
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-decoration-color: var(--zine-ink);
 }
-
 a:hover {
-  background-color: #fff2cc;
+  color: var(--zine-ink);
+  background-color: rgba(255, 228, 122, 0.25);
 }
 
-
-
-/* ===== Retro Accent Palette ===== */
-:root {
-  --retro-accent: #d18b00;   /* warm amber */
-  --retro-muted: #5f6f7a;    /* soft blue-gray */
-}
-
-/* Headings: slightly tighter, classic feel */
-h1, h2, h3 {
-  letter-spacing: 0.02em;
-}
-
-/* Links: subtle retro underline on hover */
-a {
-  text-decoration-color: var(--retro-accent);
-}
-
-a:hover {
-  color: var(--retro-accent);
-  text-decoration-thickness: 2px;
-}
-
-/* Blockquotes: terminal-note vibe */
+/* Blockquotes */
 blockquote {
-  border-left: 4px solid var(--retro-accent);
-  background: #faf8f4;
+  border-left: 4px solid var(--zine-ink);
+  background: rgba(255, 228, 122, 0.12);
   padding-left: 1rem;
   color: var(--retro-muted);
 }
 
-/* Code blocks: soft CRT-paper look */
+/* Code blocks */
 pre, code {
   background: #f6f4f1;
   border-radius: 4px;
 }
 
-/* Footer: quieter, less shouty */
+/* Footer */
 .site-footer {
   font-size: 0.9em;
   color: var(--retro-muted);
 }
 
-/* ===== Handwritten Headings ===== */
-.handwritten {
-  font-family: "Segoe Script", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-weight: 600;
-}
+/* =========================================================
+   HANDWRITTEN HEADING SPANS (use inside h1/h2/h3)
+   ========================================================= */
 
-/* Pencil: slightly rough, graphite-like */
-.handwritten-pencil {
-  font-family: "Segoe Print", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", "Marker Felt", cursive;
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-weight: 600;
-  color: #222;
-  text-shadow: 0.35px 0.35px 0 #555, -0.35px 0.25px 0 #555;
-}
-
-/* Felt-tip: darker, bolder, a touch “inked” */
-.handwritten-felt {
-  font-family: "Marker Felt", "Segoe Script", "Segoe Print", "Bradley Hand", "Snell Roundhand", "Comic Sans MS", cursive;
-  text-transform: none;
-  letter-spacing: 0.015em;
-  font-weight: 800;
-  color: #111;
-  text-shadow: 0.75px 0.75px 0 #111, -0.75px 0.5px 0 #111;
-}
-
-/* Now explicitly apply our fonts + effects with high priority */
 span.handwritten-pencil {
   font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive !important;
   font-weight: 600 !important;
   letter-spacing: 0.01em !important;
   text-transform: none !important;
-  color: #222 !important;
-  text-shadow: 0.35px 0.35px 0 #555, -0.35px 0.25px 0 #555 !important;
+  color: rgba(30,30,30,0.92) !important;
+  text-shadow: 0.35px 0.35px 0 rgba(0,0,0,0.25), -0.35px 0.25px 0 rgba(0,0,0,0.2) !important;
 }
 
 span.handwritten-felt {
-  font-family: "Segoe Script", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.02em !important;
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.015em !important;
   text-transform: none !important;
-  color: #111 !important;
-  text-shadow: 0.9px 0.9px 0 #111, -0.9px 0.6px 0 #111 !important;
+  color: rgba(20,20,20,0.95) !important;
+  text-shadow: 0.6px 0.6px 0 rgba(0,0,0,0.25), -0.5px 0.35px 0 rgba(0,0,0,0.18) !important;
 }
 
-/* ===== Zine Highlight / Underline Accents (robust) ===== */
-
-/* Marker underline using pseudo-element */
-.zine-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.zine-underline::after {
-  content: "";
-  position: absolute;
-  left: -2%;
-  bottom: 0.1em;
-  width: 104%;
-  height: 0.22em;
-  background: rgba(255, 193, 7, 0.9);
-  z-index: -1;
-  border-radius: 2px;
-
-  /* imperfection */
-  transform-origin: left center;
-  transform: rotate(-1.2deg);
-  opacity: 0.95;
-}
-
-
+/* =========================================================
+   HIGHLIGHT + UNDERLINE ACCENTS (apply class to the span)
+   ========================================================= */
 
 /* Highlighter swipe behind text */
 .zine-highlight {
   position: relative;
   display: inline-block;
 }
-
 .zine-highlight::before {
   content: "";
   position: absolute;
   left: -3%;
   top: 55%;
   width: 106%;
-  height: 0.9em;
-  background: rgba(255, 235, 59, 0.6);
+  height: 1.05em;
+  background: var(--zine-highlight);
   z-index: -1;
   border-radius: 3px;
+  transform: rotate(-0.3deg);
 }
 
-/* ===== Zine Wavy Underline (optional accent) ===== */
+/* Straight marker underline */
+.zine-underline {
+  position: relative;
+  display: inline-block;
+}
+.zine-underline::after {
+  content: "";
+  position: absolute;
+  left: -1%;
+  bottom: 0.10em;
+  width: 102%;
+  height: 0.28em;
+  background: var(--zine-ink);
+  z-index: -1;
+  border-radius: 3px;
+  opacity: 0.9;
+  transform-origin: left center;
+  transform: rotate(-1.0deg);
+}
+
+/* Wavy underline (another option) */
 .zine-underline-wavy {
   position: relative;
   display: inline-block;
 }
-
 .zine-underline-wavy::after {
   content: "";
   position: absolute;
@@ -197,54 +155,17 @@ span.handwritten-felt {
   height: 0.6em;
   z-index: -1;
   opacity: 0.95;
-
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0 100%;
-
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20' preserveAspectRatio='none'%3E%3Cpath d='M2 12 C 22 4, 42 20, 62 12 S 102 4, 118 12' fill='none' stroke='rgba(255,193,7,0.95)' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
-
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20' preserveAspectRatio='none'%3E%3Cpath d='M2 12 C 22 4, 42 20, 62 12 S 102 4, 118 12' fill='none' stroke='rgba(197,137,46,0.95)' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
   transform-origin: left center;
   transform: rotate(-0.6deg);
 }
 
-:root {
-  --zine-ink: rgba(197, 137, 46, 0.95);
-  --zine-highlight: rgba(255, 228, 122, 0.55);
-}
-
-/* Straight underline */
-.zine-underline::after {
-  background: var(--zine-ink);
-}
-
-/* Wavy underline */
-.zine-underline-wavy::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20' preserveAspectRatio='none'%3E%3Cpath d='M2 12 C 22 4, 42 20, 62 12 S 102 4, 118 12' fill='none' stroke='rgba(197,137,46,0.95)' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
-}
-
-/* Highlight */
-.zine-highlight::before {
-  background: var(--zine-highlight);
-}
-
-.zine-underline::after {
-  height: 0.28em;        /* slightly thicker */
-  border-radius: 3px;
-  opacity: 0.9;
-}
-
-.zine-underline::after {
-  left: -1%;
-  width: 102%;
-}
-
-.zine-highlight::before {
-  height: 1.05em;
-  transform: rotate(-0.3deg);
-}
-
-/* ===== Zine Section Dividers ===== */
+/* =========================================================
+   SECTION DIVIDERS
+   ========================================================= */
 
 .zine-divider {
   margin: 2.5rem 0;
@@ -252,18 +173,17 @@ span.handwritten-felt {
   position: relative;
 }
 
-/* A) Photocopier cut line (dashed) */
+/* A) Photocopier cut line */
 .zine-divider.dash {
   border-top: 2px dashed rgba(30, 30, 30, 0.55);
 }
 
-/* B) Stapled rule (double line + “staples”) */
+/* B) Stapled rule */
 .zine-divider.staple {
   border-top: 2px solid rgba(30, 30, 30, 0.55);
   border-bottom: 1px solid rgba(30, 30, 30, 0.35);
   height: 6px;
 }
-
 .zine-divider.staple::before,
 .zine-divider.staple::after {
   content: "";
@@ -276,7 +196,6 @@ span.handwritten-felt {
   border-right: none;
   border-radius: 2px;
 }
-
 .zine-divider.staple::before { left: 10%; }
 .zine-divider.staple::after  { right: 10%; }
 
@@ -286,37 +205,33 @@ span.handwritten-felt {
   height: auto;
   text-align: center;
 }
-
 .zine-divider.ornament::before {
   content: "✦ ✦ ✦";
   display: inline-block;
   padding: 0.2rem 0.8rem;
-  border: 2px solid rgba(197, 137, 46, 0.45); /* matches your zine ink tone */
+  border: 2px solid rgba(197, 137, 46, 0.45);
   border-radius: 999px;
   color: rgba(30, 30, 30, 0.75);
-  background: rgba(255, 228, 122, 0.18);     /* matches your highlight tone */
+  background: rgba(255, 228, 122, 0.18);
   letter-spacing: 0.25em;
 }
 
-/* ===== Zine Triple-Line Divider (imperfect + double-pass pencil center) ===== */
-
+/* D) Triple-line divider (imperfect + double-pass pencil center) */
 .zine-divider.triple {
   position: relative;
   height: 2.0rem;
   margin: 3rem 0;
 }
 
-/* shared line base */
+/* top/bottom lines */
 .zine-divider.triple::before,
 .zine-divider.triple::after {
   content: "";
   position: absolute;
   left: 50%;
-  background: rgba(30, 30, 30, 0.65); /* soft “print ink” */
+  background: rgba(30, 30, 30, 0.65);
   border-radius: 2px;
 }
-
-/* Top line – longest, slightly tilted */
 .zine-divider.triple::before {
   top: 0.15rem;
   width: 86%;
@@ -324,8 +239,6 @@ span.handwritten-felt {
   transform: translateX(-50%) rotate(0.35deg);
   opacity: 0.75;
 }
-
-/* Bottom line – medium, opposite tilt */
 .zine-divider.triple::after {
   bottom: 0.15rem;
   width: 58%;
@@ -334,15 +247,18 @@ span.handwritten-felt {
   opacity: 0.7;
 }
 
-/* Middle line – double-pass pencil */
+/* pencil center line */
 .zine-divider.triple span {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 36%;
   height: 3px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%) rotate(-0.6deg);
+  filter: blur(0.25px);
+  opacity: 0.9;
 
-  /* first pencil pass */
   background:
     repeating-linear-gradient(
       -8deg,
@@ -351,14 +267,7 @@ span.handwritten-felt {
       rgba(25, 25, 25, 0.12) 3px,
       rgba(25, 25, 25, 0.12) 6px
     );
-
-  border-radius: 3px;
-  transform: translate(-50%, -50%) rotate(-0.6deg);
-  filter: blur(0.25px);
-  opacity: 0.9;
 }
-
-/* second pencil pass — offset + lighter */
 .zine-divider.triple span::after {
   content: "";
   position: absolute;
@@ -366,6 +275,9 @@ span.handwritten-felt {
   top: 1px;
   width: 100%;
   height: 100%;
+  border-radius: 3px;
+  filter: blur(0.35px);
+  opacity: 0.75;
 
   background:
     repeating-linear-gradient(
@@ -375,23 +287,24 @@ span.handwritten-felt {
       rgba(25, 25, 25, 0.06) 3px,
       rgba(25, 25, 25, 0.06) 6px
     );
-
-  border-radius: 3px;
-  filter: blur(0.35px);
-  opacity: 0.75;
 }
 
-/* ===== Zine Notes / Margin-ish Callouts ===== */
+/* =========================================================
+   NOTES / CALLOUTS
+   ========================================================= */
+
+/* Taped note (inline callout) */
 .zine-note {
   position: relative;
   margin: 1.75rem 0;
   padding: 0.9rem 1rem;
-  background: rgba(255, 228, 122, 0.14); /* faint paper highlight */
+  background: rgba(255, 228, 122, 0.14);
   border: 1px solid rgba(30, 30, 30, 0.18);
   border-radius: 10px;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
 }
 
-/* little “tape” corners */
+/* tape corners */
 .zine-note::before,
 .zine-note::after {
   content: "";
@@ -401,116 +314,68 @@ span.handwritten-felt {
   height: 18px;
   background: rgba(255, 228, 122, 0.35);
   border: 1px solid rgba(30, 30, 30, 0.18);
-  transform: rotate(-4deg);
   border-radius: 6px;
 }
-
-.zine-note::before { left: 14px; }
+.zine-note::before { left: 14px; transform: rotate(-4deg); }
 .zine-note::after  { right: 14px; transform: rotate(5deg); }
 
-/* “handwritten” text variant inside the box */
-.zine-note .zine-hand,
+/* readable “handwritten-print” text */
 .zine-hand {
   font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
   text-transform: none;
   letter-spacing: 0.015em;
   font-weight: 500;
   font-size: 0.95em;
-  color: rgba(30, 30, 30, 0.85);
+  color: rgba(30, 30, 30, 0.88);
 }
 
-
-
-/* Pull-quote variant: more punch, less box */
+/* Pull-quote */
 .zine-pull {
   margin: 2rem 0;
   padding: 0.75rem 1rem;
-  border-left: 5px solid rgba(197, 137, 46, 0.75); /* your zine ink */
+  border-left: 5px solid rgba(197, 137, 46, 0.75);
   background: rgba(255, 228, 122, 0.10);
   font-style: italic;
   font-size: 1.05em;
 }
 
-/* Pencil scribble note (lighter, sketchy) */
+/* Scribble note (inline rough) */
 .zine-scribble {
   margin: 1.5rem 0;
   padding: 0.75rem 1rem;
-  border: 1px dashed rgba(30, 30, 30, 0.30);
-  background: rgba(248, 244, 236, 0.7); /* close to paper */
+  border: 1px dotted rgba(30, 30, 30, 0.30);
+  background: rgba(248, 244, 236, 0.7);
   transform: rotate(-0.4deg);
   box-shadow: 0.8px 0.8px 0 rgba(0,0,0,0.06);
 }
 
-.zine-note {
-  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
-}
+/* =========================================================
+   TRUE MARGIN NOTES (float into the right gutter)
+   Use: <div class="zine-margin"><div class="zine-hand">...</div></div>
+   ========================================================= */
 
-/* ===== True margin notes ===== */
-.zine-note.margin {
-  float: right;
-  clear: right;
-  width: 220px;
-  margin: 0.25rem 0 1rem 1.5rem;
-}
-
-.zine-note.margin-left {
-  float: left;
-  clear: left;
-  width: 220px;
-  margin: 0.25rem 1.5rem 1rem 0;
-}
-
-/* Collapse margins on smaller screens */
-@media (max-width: 900px) {
-  .zine-note.margin,
-  .zine-note.margin-left {
-    float: none;
-    width: auto;
-    margin: 1rem 0;
-  }
-}
-
-
-/* ===== Margin Notes / Scribbles ===== */
-
-/* Give posts a little right gutter on wider screens */
-@media (min-width: 900px) {
-  .post-content, .page-content {
-    position: relative;
-  }
-  .post-content, .page-content {
-    padding-right: 10rem; /* space for margin notes */
-  }
-}
-
-/* Base margin-note box (mobile = inline) */
 .zine-margin {
-  margin: 1.25rem 0;
-  padding: 0.75rem 0.9rem;
-  border: 1px dashed rgba(30, 30, 30, 0.28);
-  background: rgba(255, 228, 122, 0.12);
+  /* looks like zine-note, but used as a margin box */
+  position: relative;
+  padding: 0.85rem 0.95rem;
+  background: rgba(255, 228, 122, 0.14);
+  border: 1px solid rgba(30, 30, 30, 0.18);
   border-radius: 10px;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+  margin: 1rem 0; /* mobile default */
 }
 
-/* On desktop, float into the right margin */
+/* Desktop: float into the margin */
 @media (min-width: 900px) {
   .zine-margin {
     float: right;
     clear: right;
-    width: 9rem;           /* fits in the gutter */
-    margin: 0.2rem -10rem 1rem 1rem; /* pulls into the margin */
+    width: 12rem;
+    margin: 0.2rem -14rem 1rem 1.25rem; /* pull into gutter */
   }
 }
 
-/* True margin notes (desktop) */
-.zine-margin {
-  float: right;
-  width: 14rem;
-  margin: 0.2rem -16rem 1rem 1.5rem; /* pushes into the new margin */
-  clear: right;
-}
-
-/* On small screens, fall back to inline note */
+/* Mobile: stack normally */
 @media (max-width: 900px) {
   .zine-margin {
     float: none;
@@ -519,35 +384,20 @@ span.handwritten-felt {
   }
 }
 
-/* Handwritten print text inside margin notes */
-.zine-margin .zine-hand {
-  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
-  font-size: 0.95em;
-  letter-spacing: 0.015em;
-  color: rgba(30, 30, 30, 0.88);
-}
-
-/* Variant: scribble (more pencil / rough) */
+/* Margin variants */
 .zine-margin.scribble {
   transform: rotate(-0.6deg);
   background: rgba(248, 244, 236, 0.65);
   border-style: dotted;
-  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
 }
 
-.zine-margin.scribble .zine-hand {
-  color: rgba(20, 20, 20, 0.72);
-  text-shadow: 0.35px 0.35px 0 rgba(0,0,0,0.12);
-}
-
-/* Variant: warning / callout */
 .zine-margin.warn {
   border: 2px solid rgba(197, 137, 46, 0.55);
   background: rgba(255, 228, 122, 0.18);
 }
 
-/* Tiny “scribble line” divider inside a margin note */
-.zine-margin .zine-squig {
+/* Small squiggle divider you can drop inside a margin note */
+.zine-squig {
   margin: 0.45rem 0;
   height: 10px;
   background-repeat: repeat-x;
@@ -555,51 +405,3 @@ span.handwritten-felt {
   opacity: 0.7;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='10' viewBox='0 0 42 10'%3E%3Cpath d='M1 6 C 7 2, 14 10, 21 6 S 35 2, 41 6' fill='none' stroke='rgba(35,35,35,0.55)' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
-
-/* ===== Margin Notes (more reliable gutter) ===== */
-@media (min-width: 1100px) {
-  .wrapper {
-    padding-right: 12rem; /* create visible right gutter */
-  }
-
-  .zine-margin {
-    float: right;
-    clear: right;
-    width: 10rem;
-    margin: 0.25rem -12rem 1rem 1.25rem; /* pull into the gutter */
-  }
-}
-
-/* ===== Layout: create real “margin” space ===== */
-.wrapper {
-  max-width: 62rem; /* was 42rem */
-}
-
-.post-content {
-  max-width: 42rem;     /* keep readable article width */
-  margin-left: 0;
-  margin-right: auto;
-  position: relative;
-}
-
-/* On small screens: stack notes normally */
-@media (max-width: 900px) {
-  .post-content {
-    max-width: 42rem;
-    margin: 0 auto;
-  }
-}
-
-/* Give yourself margin space for notes */
-.wrapper {
-  max-width: 58rem; /* was 42rem */
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-/* Keep the main reading column comfortable */
-.post-content,
-.page-content {
-  max-width: 42rem;
-}
-
