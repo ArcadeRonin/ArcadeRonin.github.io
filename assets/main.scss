@@ -409,9 +409,9 @@ span.handwritten-felt {
 .zine-note::after  { right: 14px; transform: rotate(5deg); }
 
 /* “handwritten” text variant inside the box */
-.zine-note .zine-hand {
-  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", "Marker Felt",
-               system-ui, sans-serif;
+.zine-note .zine-hand,
+.zine-hand {
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
   text-transform: none;
   letter-spacing: 0.015em;
   font-weight: 500;
