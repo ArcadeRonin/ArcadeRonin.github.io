@@ -42,7 +42,24 @@ categories: [zine, retro-games, DCC]
   </div>
 </div>
 
+<div class="zine-divider dcc chalk">
+  <span>✶</span>
+</div>
 
+### <span class="handwritten-felt zine-underline-wavy">Why This Zine Exists</span>
+
+This didn’t start as a blog.
+
+It started as notes worth keeping.
+
+<div class="zine-divider triple">
+  <span></span>
+</div>
+
+### <span class="handwritten-felt zine-underline-wavy">What You’ll Find Here</span>
+
+Retro games. Old systems. Dungeon Crawl Classics.
+Occasional IT scars. No algorithms.
 
 
 
