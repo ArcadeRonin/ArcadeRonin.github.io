@@ -410,6 +410,59 @@ span.handwritten-felt {
   box-shadow: 0.8px 0.8px 0 rgba(0,0,0,0.06);
 }
 
+/* ===== Editor’s Note ===== */
+
+.editor-note {
+  position: relative;
+  margin: 2.5rem 0;
+  padding: 1.1rem 1.25rem 1.15rem;
+  background: rgba(248, 244, 236, 0.9);
+  border: 2px solid rgba(30, 30, 30, 0.6);
+  border-radius: 12px;
+  box-shadow: 1.5px 1.5px 0 rgba(0,0,0,0.10);
+}
+
+/* Title line */
+.editor-note .editor-title {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.15rem 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  border: 1px solid rgba(30,30,30,0.6);
+  border-radius: 999px;
+  background: rgba(255, 228, 122, 0.18);
+}
+
+/* Body text — handwritten print, not cursive */
+.editor-note .editor-body {
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+  font-size: 1.02rem;
+  letter-spacing: 0.015em;
+  color: rgba(30,30,30,0.88);
+}
+
+/* Signature line */
+.editor-note .editor-sign {
+  margin-top: 0.85rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: rgba(30,30,30,0.75);
+}
+
+/* Small glyph accent */
+.editor-note::after {
+  content: "✦";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 1.1rem;
+  opacity: 0.55;
+}
+
+
 /* =========================================================
    TRUE MARGIN NOTES (float into the right gutter)
    Use: <div class="zine-margin"><div class="zine-hand">...</div></div>
