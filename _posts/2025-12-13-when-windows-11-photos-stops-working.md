@@ -5,21 +5,7 @@ categories: [it, desktop-support]
 
 ### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
 
-<div class="zine-divider dash"></div>
-
-### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
-
-<div class="zine-divider staple"></div>
-
-### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
-
-<div class="zine-divider ornament"></div>
-
-### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
-
 <div class="zine-divider triple"><span></span></div>
-
-
 
 
 Windows 11’s built-in apps are convenient until they aren’t. An app that has recently begun to cause us trouble at work is Photos. In some cases, Photos can become corrupted or partially broken, and frustratingly, the usual fixes don’t always work. Repairing the app, resetting it, uninstalling, or even reinstalling it from the Microsoft Store may fail to resolve the issue.
@@ -29,22 +15,9 @@ When this happens, our designers and customer service reps are left without a re
 
 ### Why This Is a Bigger Issue Than It Looks
 
-<div class="zine-note margin">
-  <div class="zine-hand">Quick note: this only shows up on some machines.</div>
-</div>
-
-
-
 For many businesses, image viewing isn’t optional. Our company frequently receives photos from customers, and a large portion of those images are in **HEIC** format. HEIC (High Efficiency Image Container) is the standard photo format used by iPhones, so this isn’t an edge case for us. It’s everyday business as usual.
 
 On Windows, viewing HEIC files typically requires installing the HEVC/HEIC codec from the Microsoft Store. Microsoft charges a small fee for this because the underlying HEVC compression technology is covered by patent licensing. Individually, the cost is minor. At scale, the cost still doesn’t break the bank, but there is more to consider.
-
-<div class="zine-note">
-  <div class="zine-hand">
-    Note: This kept happening on multiple machines even after reset/reinstall.
-    That’s when we stopped fighting Photos and replaced it.
-  </div>
-</div>
 
 
 When you factor in:
@@ -60,11 +33,6 @@ When you factor in:
 
 This is where **nomacs** comes in.
 
-<div class="zine-note margin-left">
-  <div class="zine-hand">Checklist: Install → set default → done</div>
-</div>
-
-
 
 nomacs is a free, open-source image viewer for Windows 11 that:
 
@@ -72,13 +40,6 @@ nomacs is a free, open-source image viewer for Windows 11 that:
 - Supports common image formats out of the box  
 - Supports **HEIC** files, including those taken on iPhones  
 - Requires no Microsoft Store purchases or per-device licensing  
-
-<div class="zine-margin scribble">
-  <div class="zine-hand">
-    Try nomacs first.<br>
-    Faster than fighting Photos.
-  </div>
-</div>
 
 
 Because nomacs includes HEIC support via open-source libraries, it avoids the codec paywall entirely while still *just working* for end users.
@@ -93,12 +54,6 @@ In environments where the Windows Photos app is broken:
 - Replacing it with **nomacs** immediately restores image viewing  
 - **HEIC** support is included, eliminating the need for paid codecs  
 
-<div class="zine-margin scribble">
-  <div class="zine-hand">Checklist:</div>
-  <div class="zine-squig"></div>
-  <div class="zine-hand">Install → set default → done</div>
-</div>
-
 
 In other words, fixing the Photos problem with a reliable alternative also solves the HEIC problem at the same time.
 
@@ -108,9 +63,3 @@ In other words, fixing the Photos problem with a reliable alternative also solve
 Windows 11 default apps aren’t always as reliable as they should be, and when Photos breaks, it can be surprisingly hard to fix. For organizations that regularly handle iPhone photos, relying on paid codecs across dozens of locations is inefficient and, depending on scale, can be costly.
 
 **nomacs** is a practical, free, and scalable solution. Sometimes, the simplest fix is replacing the broken piece entirely.
-
-<div class="zine-pull">
-  “Sometimes the simplest fix is replacing the broken piece entirely.”
-</div>
-
-
