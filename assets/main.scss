@@ -512,3 +512,17 @@ span.handwritten-felt {
   opacity: 0.7;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='10' viewBox='0 0 42 10'%3E%3Cpath d='M1 6 C 7 2, 14 10, 21 6 S 35 2, 41 6' fill='none' stroke='rgba(35,35,35,0.55)' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
+
+/* ===== Margin Notes (more reliable gutter) ===== */
+@media (min-width: 1100px) {
+  .wrapper {
+    padding-right: 12rem; /* create visible right gutter */
+  }
+
+  .zine-margin {
+    float: right;
+    clear: right;
+    width: 10rem;
+    margin: 0.25rem -12rem 1rem 1.25rem; /* pull into the gutter */
+  }
+}
