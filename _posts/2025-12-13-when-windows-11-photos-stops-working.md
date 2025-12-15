@@ -28,6 +28,10 @@ When this happens, our designers and customer service reps are left without a re
 
 
 ### Why This Is a Bigger Issue Than It Looks
+<div class="zine-margin">
+  <div class="zine-hand">Quick note: this only shows up on some machines.</div>
+</div>
+
 
 For many businesses, image viewing isn’t optional. Our company frequently receives photos from customers, and a large portion of those images are in **HEIC** format. HEIC (High Efficiency Image Container) is the standard photo format used by iPhones, so this isn’t an edge case for us. It’s everyday business as usual.
 
@@ -65,6 +69,14 @@ nomacs is a free, open-source image viewer for Windows 11 that:
 - Supports **HEIC** files, including those taken on iPhones  
 - Requires no Microsoft Store purchases or per-device licensing  
 
+<div class="zine-margin scribble">
+  <div class="zine-hand">
+    Try nomacs first.<br>
+    Faster than fighting Photos.
+  </div>
+</div>
+
+
 Because nomacs includes HEIC support via open-source libraries, it avoids the codec paywall entirely while still *just working* for end users.
 
 You can find the project here: https://nomacs.org
@@ -76,6 +88,13 @@ In environments where the Windows Photos app is broken:
 
 - Replacing it with **nomacs** immediately restores image viewing  
 - **HEIC** support is included, eliminating the need for paid codecs  
+
+<div class="zine-margin scribble">
+  <div class="zine-hand">Checklist:</div>
+  <div class="zine-squig"></div>
+  <div class="zine-hand">Install → set default → done</div>
+</div>
+
 
 In other words, fixing the Photos problem with a reliable alternative also solves the HEIC problem at the same time.
 
