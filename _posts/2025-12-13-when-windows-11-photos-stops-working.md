@@ -3,10 +3,7 @@ title: "When Windows 11 Photos Stops Working: A Practical Alternative"
 categories: [it, desktop-support]
 ---
 
-### <span class="handwritten-felt zine-underline-wavy">The Problem</span>
-
-<div class="zine-divider triple"><span></span></div>
-
+### The Problem
 
 Windows 11’s built-in apps are convenient until they aren’t. An app that has recently begun to cause us trouble at work is Photos. In some cases, Photos can become corrupted or partially broken, and frustratingly, the usual fixes don’t always work. Repairing the app, resetting it, uninstalling, or even reinstalling it from the Microsoft Store may fail to resolve the issue.
 
@@ -18,7 +15,7 @@ When this happens, our designers and customer service reps are left without a re
 For many businesses, image viewing isn’t optional. Our company frequently receives photos from customers, and a large portion of those images are in **HEIC** format. HEIC (High Efficiency Image Container) is the standard photo format used by iPhones, so this isn’t an edge case for us. It’s everyday business as usual.
 
 <div class="zine-margin">
-  <div class="zine-hand">Quick note: this only shows up on some machines.</div>
+  <div class="zine-hand">Quick note: Their are free HEIC viewers but they come with pop ups, please rate us, ads, and some just seem sketchy.</div>
 </div>
 
 
