@@ -26,3 +26,8 @@ defaults:
       type: "pages"
     values:
       layout: page
+
+header_pages:
+  - about.md
+  - zine/index.md
+  - projects.md
