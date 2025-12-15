@@ -48,6 +48,10 @@ Because nomacs includes HEIC support via open-source libraries, it avoids the co
 
 You can find the project here: https://nomacs.org
 
+<div class="zine-divider dcc blood">
+  <span>☠</span>
+</div>
+
 
 ### One Fix, Two Problems Solved
 
