@@ -59,6 +59,10 @@ In environments where the Windows Photos app is broken:
 
 In other words, fixing the Photos problem with a reliable alternative also solves the HEIC problem at the same time.
 
+<div class="zine-divider triple">
+  <span></span>
+</div>
+
 
 ### The Takeaway
 
