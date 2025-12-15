@@ -53,6 +53,10 @@ When you factor in:
 ### A Free, Open-Source Solution: nomacs
 
 This is where **nomacs** comes in.
+<div class="zine-scribble">
+  <span class="zine-hand">Try this first:</span> install nomacs, set default apps, move on.
+</div>
+
 
 nomacs is a free, open-source image viewer for Windows 11 that:
 
