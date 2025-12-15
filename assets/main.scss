@@ -462,6 +462,114 @@ span.handwritten-felt {
   opacity: 0.55;
 }
 
+/* Editor’s Note — DCC ritual variant */
+.editor-note.dcc::after {
+  content: "✶";
+  opacity: 0.55;
+}
+
+/* Editor’s Note — darker issue */
+.editor-note.dark::after {
+  content: "☠";
+  opacity: 0.4;
+}
+
+/* ===== Closing Colophon ===== */
+
+.colophon {
+  position: relative;
+  margin: 3.5rem 0 2rem;
+  padding: 1.1rem 1.2rem 1.15rem;
+  background: rgba(248, 244, 236, 0.9);
+  border: 2px solid rgba(30, 30, 30, 0.55);
+  border-radius: 12px;
+  box-shadow: 1.5px 1.5px 0 rgba(0,0,0,0.10);
+}
+
+.colophon::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: -14px;
+  height: 1px;
+  background: rgba(30,30,30,0.45);
+  transform: rotate(-0.35deg);
+}
+
+.colophon-title {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  padding: 0.15rem 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  border: 1px solid rgba(30,30,30,0.55);
+  border-radius: 999px;
+  background: rgba(255, 228, 122, 0.16);
+}
+
+.colophon-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem 1rem;
+  color: rgba(30,30,30,0.86);
+}
+
+@media (min-width: 800px) {
+  .colophon-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.colophon-item {
+  line-height: 1.35;
+}
+
+.colophon-label {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.72rem;
+  color: rgba(30,30,30,0.70);
+  margin-bottom: 0.15rem;
+}
+
+.colophon-value {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.colophon-stamp {
+  margin-top: 0.9rem;
+  padding-top: 0.85rem;
+  border-top: 2px solid rgba(30,30,30,0.45);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  color: rgba(30,30,30,0.78);
+  font-size: 0.95rem;
+}
+
+.colophon-stamp .sig {
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+  letter-spacing: 0.015em;
+}
+
+.colophon::after {
+  content: "✦";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 1.1rem;
+  opacity: 0.55;
+}
+
+/* Variants */
+.colophon.dcc::after { content: "✶"; }
+.colophon.deadly::after { content: "☠"; opacity: 0.45; }
+
 
 /* =========================================================
    TRUE MARGIN NOTES (float into the right gutter)
