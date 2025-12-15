@@ -410,10 +410,12 @@ span.handwritten-felt {
 
 /* “handwritten” text variant inside the box */
 .zine-note .zine-hand {
-  font-family: "Segoe Script","Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", "Marker Felt", system-ui, sans-serif;
   text-transform: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
+  font-weight: 500;
 }
+
 
 /* Pull-quote variant: more punch, less box */
 .zine-pull {
