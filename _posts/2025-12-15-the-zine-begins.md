@@ -1,5 +1,5 @@
 ---
-title: "The Zine Begins"
+title: "Retro Ron presents: Pixels & Parchment"
 categories: [zine, retro-games, DCC]
 ---
 
