@@ -1,6 +1,6 @@
 ---
-title: Blog
-permalink: /blog/
+title: Zine
+permalink: /zine/
 ---
 
 {% for post in site.posts %}
