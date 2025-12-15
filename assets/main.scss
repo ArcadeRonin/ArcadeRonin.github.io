@@ -444,3 +444,71 @@ span.handwritten-felt {
 .zine-note {
   box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
 }
+
+/* ===== Margin Notes / Scribbles ===== */
+
+/* Give posts a little right gutter on wider screens */
+@media (min-width: 900px) {
+  .post-content, .page-content {
+    position: relative;
+  }
+  .post-content, .page-content {
+    padding-right: 10rem; /* space for margin notes */
+  }
+}
+
+/* Base margin-note box (mobile = inline) */
+.zine-margin {
+  margin: 1.25rem 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px dashed rgba(30, 30, 30, 0.28);
+  background: rgba(255, 228, 122, 0.12);
+  border-radius: 10px;
+}
+
+/* On desktop, float into the right margin */
+@media (min-width: 900px) {
+  .zine-margin {
+    float: right;
+    clear: right;
+    width: 9rem;           /* fits in the gutter */
+    margin: 0.2rem -10rem 1rem 1rem; /* pulls into the margin */
+  }
+}
+
+/* Handwritten print text inside margin notes */
+.zine-margin .zine-hand {
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
+  font-size: 0.95em;
+  letter-spacing: 0.015em;
+  color: rgba(30, 30, 30, 0.88);
+}
+
+/* Variant: scribble (more pencil / rough) */
+.zine-margin.scribble {
+  transform: rotate(-0.6deg);
+  background: rgba(248, 244, 236, 0.65);
+  border-style: dotted;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+}
+
+.zine-margin.scribble .zine-hand {
+  color: rgba(20, 20, 20, 0.72);
+  text-shadow: 0.35px 0.35px 0 rgba(0,0,0,0.12);
+}
+
+/* Variant: warning / callout */
+.zine-margin.warn {
+  border: 2px solid rgba(197, 137, 46, 0.55);
+  background: rgba(255, 228, 122, 0.18);
+}
+
+/* Tiny “scribble line” divider inside a margin note */
+.zine-margin .zine-squig {
+  margin: 0.45rem 0;
+  height: 10px;
+  background-repeat: repeat-x;
+  background-size: 42px 10px;
+  opacity: 0.7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='10' viewBox='0 0 42 10'%3E%3Cpath d='M1 6 C 7 2, 14 10, 21 6 S 35 2, 41 6' fill='none' stroke='rgba(35,35,35,0.55)' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
