@@ -17,6 +17,11 @@ When this happens, our designers and customer service reps are left without a re
 
 For many businesses, image viewing isn’t optional. Our company frequently receives photos from customers, and a large portion of those images are in **HEIC** format. HEIC (High Efficiency Image Container) is the standard photo format used by iPhones, so this isn’t an edge case for us. It’s everyday business as usual.
 
+<div class="zine-margin">
+  <div class="zine-hand">Quick note: this only shows up on some machines.</div>
+</div>
+
+
 On Windows, viewing HEIC files typically requires installing the HEVC/HEIC codec from the Microsoft Store. Microsoft charges a small fee for this because the underlying HEVC compression technology is covered by patent licensing. Individually, the cost is minor. At scale, the cost still doesn’t break the bank, but there is more to consider.
 
 
