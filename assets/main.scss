@@ -467,6 +467,123 @@ span.handwritten-felt {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='10' viewBox='0 0 42 10'%3E%3Cpath d='M1 6 C 7 2, 14 10, 21 6 S 35 2, 41 6' fill='none' stroke='rgba(35,35,35,0.55)' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
+/* ===== Module Cover: Boxed Title Card ===== */
+
+.module-card {
+  position: relative;
+  margin: 2.5rem 0 2rem;
+  padding: 1.4rem 1.3rem 1.1rem;
+  background: rgba(248, 244, 236, 0.9);
+  border: 3px solid rgba(30, 30, 30, 0.75);
+  border-radius: 14px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.10);
+  overflow: hidden;
+}
+
+/* subtle “photocopied grime” edge */
+.module-card::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px dashed rgba(30,30,30,0.22);
+  border-radius: 18px;
+  pointer-events: none;
+  transform: rotate(-0.2deg);
+}
+
+/* top utility line: issue / category */
+.module-kicker {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  color: rgba(30,30,30,0.78);
+}
+
+.module-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgba(30,30,30,0.45);
+  border-radius: 999px;
+  background: rgba(255, 228, 122, 0.16);
+}
+
+/* big title */
+.module-title {
+  margin: 0.2rem 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  line-height: 1.05;
+  color: rgba(20,20,20,0.95);
+}
+
+/* subtitle (handwritten print, not cursive) */
+.module-subtitle {
+  margin: 0 0 1rem;
+  font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  color: rgba(30,30,30,0.88);
+}
+
+/* faux publisher line */
+.module-byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 2px solid rgba(30,30,30,0.55);
+  font-family: Georgia, "Times New Roman", serif;
+  color: rgba(30,30,30,0.82);
+}
+
+.module-byline .smallcaps {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+/* little corner glyph */
+.module-glyph {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+/* DCC variants */
+.module-card.dcc .module-tag {
+  background: rgba(255, 228, 122, 0.12);
+  border-color: rgba(30,30,30,0.55);
+}
+.module-card.dcc .module-glyph { content: ""; }
+
+.module-card.deadly {
+  border-color: rgba(120, 20, 20, 0.75);
+}
+.module-card.deadly .module-tag {
+  border-color: rgba(120, 20, 20, 0.55);
+  background: rgba(120, 20, 20, 0.06);
+}
+.module-card.deadly .module-glyph { color: rgba(120, 20, 20, 0.85); }
+
+/* Mobile spacing */
+@media (max-width: 700px) {
+  .module-card { padding: 1.1rem 1rem 0.95rem; }
+  .module-kicker { justify-content: flex-start; }
+}
+
+
 /* ===== DCC Warning Boxes ===== */
 
 .dcc-box {
