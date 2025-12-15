@@ -33,14 +33,14 @@ h1, h2, h3 {
 
 /* Keep reading column readable, but leave room for margin notes */
 .wrapper {
-  max-width: 58rem;
+  max-width: 64rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
 .post-content,
 .page-content {
-  max-width: 42rem;
+  max-width: 50rem;
   margin-right: auto; /* creates right gutter space */
   position: relative;
 }
