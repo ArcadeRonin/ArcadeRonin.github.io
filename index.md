@@ -9,6 +9,6 @@ permalink: /
 
 I write about **retro games**, **retro tech**, **Dungeon Crawl Classic** and **I.T. Desktop Support** — plus projects I’m tinkering with along the way.
 
-- Read the latest posts on the **[Zine](/Zine/)**
+- Read the latest issue of the **[Zine](/Zine/)**
 - Browse what I’m building on **[Projects](/projects/)**
 - Learn more **[About me](/about/)**
