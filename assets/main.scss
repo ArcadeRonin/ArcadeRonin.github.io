@@ -502,6 +502,23 @@ span.handwritten-felt {
   }
 }
 
+/* True margin notes (desktop) */
+.zine-margin {
+  float: right;
+  width: 14rem;
+  margin: 0.2rem -16rem 1rem 1.5rem; /* pushes into the new margin */
+  clear: right;
+}
+
+/* On small screens, fall back to inline note */
+@media (max-width: 900px) {
+  .zine-margin {
+    float: none;
+    width: auto;
+    margin: 1rem 0;
+  }
+}
+
 /* Handwritten print text inside margin notes */
 .zine-margin .zine-hand {
   font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif !important;
@@ -571,5 +588,18 @@ span.handwritten-felt {
     max-width: 42rem;
     margin: 0 auto;
   }
+}
+
+/* Give yourself margin space for notes */
+.wrapper {
+  max-width: 58rem; /* was 42rem */
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Keep the main reading column comfortable */
+.post-content,
+.page-content {
+  max-width: 42rem;
 }
 
