@@ -24,3 +24,20 @@ categories: [zine, retro-games, DCC]
   </div>
 </div>
 
+<div class="editor-note">
+  <div class="editor-title">Editor’s Note</div>
+
+  <div class="editor-body">
+    This project started as a way to write things down before they faded.
+    Retro games, old systems, strange RPG ideas, and the occasional IT war story.
+    No algorithms, no optimization, just notes worth keeping.
+  </div>
+
+  <div class="editor-body">
+    Issue one. No plan beyond showing up and putting ink on the page.
+  </div>
+
+  <div class="editor-sign">
+    — Retro Ron
+  </div>
+</div>
