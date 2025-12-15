@@ -66,6 +66,6 @@ In other words, fixing the Photos problem with a reliable alternative also solve
 
 ### The Takeaway
 
-Windows 11 default apps aren’t always as reliable as they should be, and when Photos breaks, it can be surprisingly hard to fix. For organizations that regularly handle iPhone photos, relying on paid codecs across dozens of locations is inefficient and, depending on scale, can be costly.
+Windows 11 default apps aren’t always as reliable as they should be, and when Photos breaks, it can be surprisingly hard to fix. For organizations with customer service that regularly handle iPhone photos, relying on paid codecs across dozens of locations can be inefficient. The user experience isn't great with some of these free apps either and security of customer's photos is always a concern. I wouldn't recommend free web apps either when it comes to privacy concerns. 
 
-**nomacs** is a practical, free, and scalable solution. Sometimes, the simplest fix is replacing the broken piece entirely.
+**nomacs** is a practical, free, works as default app for images, and is a better user experience than other free apps. Sometimes, the simplest fix is replacing the broken piece entirely.
