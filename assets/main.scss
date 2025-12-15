@@ -445,6 +445,32 @@ span.handwritten-felt {
   box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
 }
 
+/* ===== True margin notes ===== */
+.zine-note.margin {
+  float: right;
+  clear: right;
+  width: 220px;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+
+.zine-note.margin-left {
+  float: left;
+  clear: left;
+  width: 220px;
+  margin: 0.25rem 1.5rem 1rem 0;
+}
+
+/* Collapse margins on smaller screens */
+@media (max-width: 900px) {
+  .zine-note.margin,
+  .zine-note.margin-left {
+    float: none;
+    width: auto;
+    margin: 1rem 0;
+  }
+}
+
+
 /* ===== Margin Notes / Scribbles ===== */
 
 /* Give posts a little right gutter on wider screens */
@@ -526,3 +552,24 @@ span.handwritten-felt {
     margin: 0.25rem -12rem 1rem 1.25rem; /* pull into the gutter */
   }
 }
+
+/* ===== Layout: create real “margin” space ===== */
+.wrapper {
+  max-width: 62rem; /* was 42rem */
+}
+
+.post-content {
+  max-width: 42rem;     /* keep readable article width */
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+}
+
+/* On small screens: stack notes normally */
+@media (max-width: 900px) {
+  .post-content {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+}
+
